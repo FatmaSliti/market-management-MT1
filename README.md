@@ -32,10 +32,12 @@ You can customize and extend the frontend components and pages to fit your speci
 
 Here are some screenshots of the frontend interface:
 
-![home](readmeimages/home.png)
+![home](screenshots/home.png)
 
-![newMarket](readmeimages/newMarket.png)
+![newMarket](screenshots/newMarket.png)
 
-![attachement](readmeimages/att.png)
+![attachement](screenshots/info.png)
+
+![attachement](screenshots/att.png)
 
 
