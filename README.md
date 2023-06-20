@@ -38,5 +38,11 @@ Here are some screenshots of the frontend interface:
 
 ![attachement](screenshots/info.png)
 
+### Installation and Setup
 
+1. Ensure you have Node.js and npm installed on your machine.
+2. Navigate to the `frontend` directory: `cd telecome`.
+3. Run the command `npm install` to install the frontend dependencies.
+4. Once the installation is complete, execute `npm start` to start the development server.
+5. Access the frontend application in your browser at `http://localhost:3000`.
 
