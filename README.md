@@ -38,6 +38,5 @@ Here are some screenshots of the frontend interface:
 
 ![attachement](screenshots/info.png)
 
-![attachement](screenshots/att.png)
 
 
