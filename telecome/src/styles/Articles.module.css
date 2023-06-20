@@ -1,0 +1,121 @@
+/* start title styles */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-text {
+    margin: 100px 0 0;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 4px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+/* end title styles */
+.my-table {
+    /* width: 70%; */
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.my-table th {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+}
+
+.my-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.my-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.my-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+/* input {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    outline: none;
+    font-size: 19px;
+} */
+
+/* input:focus {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0.4, 0.4);
+    box-sizing: border-box;
+} */
+
+/* styles.css */
+
+@media screen and (max-width: 600px) {
+
+    /* Adjust the table width for smaller screens */
+    .my-table {
+        width: 100%;
+    }
+}
+
+/*style the buttons */
+
+.delete-btn {
+    background-color: var(--color-lightblue);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 12px 7px;
+}
+
+.add-btn {
+    background-color: #66ccff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover,
+.delete-btn:hover {
+    background-color: #ff8080;
+}
+
+/* decorate buttons */
+/* Style for the Add button */
+.add-row-btn {
+    background-color: var(--color-lightblue);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 140px;
+}
+
+.add-row-btn:hover {
+    letter-spacing: 0.1rem;
+    background-color: #1562a2eb;
+    transition: 0.2s ease-in-out;
+}
+
+.box a:hover {
+    background: var(--green);
+    letter-spacing: 0.1rem;
+}

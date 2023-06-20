@@ -1,0 +1,48 @@
+.company-info {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.company-info-right {
+  display: flex;
+  align-items: end;
+}
+
+.company-info-left,
+.company-info-right {
+  text-align: center;
+}
+
+.company-info-right .logo {
+  height: 50px;
+}
+
+.company-name-arabic {
+  font-family: "Amiri", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  direction: rtl;
+}
+
+.company-info-line-arabic {
+  font-family: "Amiri", sans-serif;
+  font-size: 18px;
+  direction: rtl;
+}
+
+@media screen and (max-width:550px){
+  .company-info-left,
+  .company-info-right {
+    font-size: 12px;
+}
+  .company-info-line-arabic {
+    font-size: 12px;
+}
+  .company-name-arabic {
+    font-size: 14px;
+}
+}

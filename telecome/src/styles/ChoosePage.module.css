@@ -1,0 +1,288 @@
+a {
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #0a8fb3;
+    --padding-section: 100px;
+    --main-transition: 0.3s;
+    --grey-background: #ececec;
+}
+
+/*Start global rules*/
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End global rules*/
+/* header */
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #eee; */
+    font-size: 18px;
+}
+
+.company-info-right {
+    display: flex;
+    align-items: end;
+}
+
+.company-info-left,
+.company-info-right {
+    text-align: center;
+}
+
+.company-info-right .logo {
+    height: 50px
+}
+
+.company-name-arabic {
+    font-family: 'Amiri', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    direction: rtl;
+}
+
+.company-info-line-arabic {
+    font-family: 'Amiri', sans-serif;
+    font-size: 18px;
+    direction: rtl;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+/* start features  */
+body {
+    /* background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+    margin: 0;
+    /* font-family: var(--ff-primary); */
+}
+
+.features {
+    padding-top: 50px;
+    padding-bottom: var(--padding-section);
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.features .container .box {
+    border: 1px solid #ccc;
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.features .container .box .image {
+    position: relative;
+
+}
+
+.features .container .box .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.features .container .box .image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 0 0 170px 500px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    transition: var(--main-transition);
+}
+
+.features .container .box:hover .image::after {
+    border-width: 170px 500px 170px 0;
+}
+
+
+.features .container .box img {
+    max-width: 100%;
+}
+
+.features .container .box h1 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.features .container .box h1::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    bottom: -15px;
+    left: 15px;
+    width: calc(100% - 30px);
+}
+
+.features .container .box p {
+    padding: 20px;
+    /* margin: 30px 0; */
+    line-height: 2;
+    color: #777;
+    font-size: 18px;
+}
+
+.features .container .box a {
+    border: 3px solid transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+
+.box a:hover {
+    background: var(--green);
+    letter-spacing: 0.1rem;
+}
+
+.features .container .box:hover a {
+    background-position: left bottom;
+    color: white;
+}
+
+/* start box1  */
+.features .container:first-of-type .image::before {
+    background-color: rgba(213, 134, 219, 0.4);
+}
+
+.features .container:first-of-type h1::after {
+    background-color: #cecff8;
+}
+
+.features .container:first-of-type a {
+    color: #cecff8;
+    border-color: #cecff8;
+    background: linear-gradient(to right, #cecff8 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+/* start box2  */
+
+.features .container :nth-child(2) .image::before {
+    background-color: rgba(76, 186, 241, 0.4);
+}
+
+.features .container :nth-child(2) h1::after {
+    background-color: #bde5f9;
+}
+
+.features .container :nth-child(2) a {
+    color: #bde5f9;
+    border-color: #bde5f9;
+    background: linear-gradient(to right, #bde5f9 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+/* start box3  */
+.features .container :last-of-type .image::before {
+    background-color: rgba(213, 134, 219, 0.4);
+}
+
+.features .container :last-of-type h1::after {
+    background-color: #cecff8;
+}
+
+.features .container :last-of-type a {
+    color: #cecff8;
+    border-color: #cecff8;
+    background: linear-gradient(to right, #cecff8 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+/* End features  */
+img {
+    height: 250px;
+}
+
+/*footer*/
+
+footer {
+    /* background-color: #f0f0f0; */
+    padding: 5rem 1rem;
+    margin: 0;
+}
+
+footer p {
+    color: var(--clr-white);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    margin-bottom: 0;
+}
+
+
+.sign {
+    margin: 0 20px  30px 0;
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color: var(--color-green);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+.signu {
+    text-align: center 
+}
+
+.sign:hover {
+    letter-spacing: 0.1rem;
+    background-color: #007bff;
+    transition: 0.2s ease-in-out;
+}

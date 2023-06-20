@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.form-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+.form--input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form--submit {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1562a2;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form--marketing {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form--marketing>input {
+    margin-right: 10px;
+}
+
+/*styling the message that appears at the bottom*/
+.success-message {
+    padding: 15px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    bottom: 20px;
+}
+
+.error-message {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.info-message {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+
+/*style the image*/
+.container {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+  /* overflow: auto;   */
+}
+
+
+
+.form-container {}
+
+/* Additional styling for the image */
+.image-container img {
+    width: 300px;
+}
+
+
+.signup {
+    text-align: center;
+    margin: 80px auto 80px;
+}
+
+
+.message-container {
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-top: 20px; */
+    height: 50px;
+    width: fit-content;
+    margin: 0 auto 50px ;
+    /* Adjust the height as needed */
+}
+
+h1, .signup, h3, h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 2.75rem;
+    font-family: var(--ff-primary);
+}
+
+@media screen and (min-width: 800px) {
+h2 {
+    font-size: 2.5rem;
+}
+}
+
+
+input {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+/* input:focus {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0.4, 0.4);
+    box-sizing: border-box;
+} */
+
+@media screen and (max-width:750px) {
+    .image-container {
+        display: none;
+    }
+}

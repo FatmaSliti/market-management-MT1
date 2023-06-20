@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+/* start header */
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #eee; */
+    font-size: 18px;
+}
+
+.company-info-right {
+    display: flex;
+    align-items: end;
+}
+
+.company-info-left,
+.company-info-right {
+    text-align: center;
+}
+
+.company-info-right .logo {
+    height: 50px
+}
+
+.company-name-arabic {
+    font-family: 'Amiri', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    direction: rtl;
+}
+
+.company-info-line-arabic {
+    font-family: 'Amiri', sans-serif;
+    font-size: 18px;
+    direction: rtl;
+}
+
+/* end header */
+
+
+.title {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    position: relative;
+    margin: 50px auto 10px;
+    text-align: center;
+}
+
+.pHeader {
+    text-align: center;
+}
+
+
+
+/*start styling table*/
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin: 60px 0 20px; */
+}
+
+.table input {
+    outline: none;
+}
+
+/* 
+.table input:focus tr {
+    border: 10px solid #007bff;
+} */
+
+.table td:focus-within {
+    border-bottom: 2px solid var(--color-lightblue);
+    transition: border-color 0.2s ease-in-out;
+}
+
+th,
+td {
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 1.2rem;
+}
+
+/* th:nth-child(2) {
+    width: 50%;
+} */
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    transition: border-color 0.2s ease-in-out;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input:focus~label {
+    color: #007bff;
+}
+
+
+/*end styling table*/
+
+
+.lastTable td {
+    padding: 0;
+}
+
+.lastTable table {
+    margin: 0;
+}
+
+/*conclusion*/
+
+.conclusion h3,
+.conclusion p {
+    display: inline-block;
+}
+
+.conclusion {
+    max-width: 800px;
+    margin: 50px auto;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+}
+
+/* print button */
+
+.imprimer {
+    /* display: inline-block; */
+    display: block;
+    margin: 70px  30px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+.imprimer:hover {
+    letter-spacing: 0.1rem;
+    background-color: #f69749;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
