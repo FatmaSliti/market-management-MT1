@@ -40,4 +40,3 @@ Here are some screenshots of the frontend interface:
 
 ![table](readmeimages/table.png)
 
-![table](readmeimages/ordre.png)
