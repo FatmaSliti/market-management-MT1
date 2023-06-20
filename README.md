@@ -38,5 +38,4 @@ Here are some screenshots of the frontend interface:
 
 ![attachement](readmeimages/att.png)
 
-![table](readmeimages/table.png)
 
