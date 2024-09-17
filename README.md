@@ -1,7 +1,5 @@
 # Project: Monthly Attachments Management for MT1 Markets
 
-This project was completed as part of my end-of-studies internship.
-
 The goal of this project is to develop an application that manages the monthly attachments for MT1 markets. The intern is responsible for the following tasks:
 
 - Retrieve store articles.
